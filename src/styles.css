@@ -5,9 +5,42 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #f0f0f0;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+a {
+  color: #545e6f;
+  text-decoration: none;
+}
+
+.app {
+  background: #fff;
+  margin: 25px auto;
+  padding: 25px;
+  max-width: 800px;
+  width: 95%;
+}
+
+.nav {
+  margin-bottom: 25px;
+}
+
+.nav a {
+  background: #f0f0f0;
+  border-radius: 4px;
+  padding: 6px 10px;
+  margin-right: 10px;
+}
+
+.nav a.active {
+  color: #fff;
+  background: #7600dc;
+}
+.nav a.inactive {
+  font-style: italic;
 }

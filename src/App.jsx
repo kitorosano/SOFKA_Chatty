@@ -12,6 +12,7 @@ import Signup from './pages/Signup';
 import Login from './pages/Login';
 import { onAuthStateChanged } from 'firebase/auth';
 import { auth } from './services/firebase';
+import Navbar from './components/Navbar';
 
 function PrivateOutlet({ authenticated, children }) {
 	return authenticated ? children : <Navigate to='/login' />;
@@ -45,6 +46,8 @@ function App() {
 		<h2>Loading...</h2>
 	) : (
 		<Router>
+      <Navbar authenticated={state.authenticated}/>
+
 			<Routes>
 				<Route path='/' element={<Home />} />
 				<Route
